@@ -4,17 +4,17 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="flex flex-row w-full justify-between p-5">
-    <Link href={"/"} className="pb-2 border-b-2">
-      angg
-    </Link>
-    <Link href={"/music"} className="pb-2">
-      🎧?
-    </Link>
-  </div>
+      <Link href={"/"} className="pb-2 border-b-2">
+        Musaj
+      </Link>
+      <Link href={"/music"} className="pb-2">
+        🎧?
+      </Link>
+    </div>
   )
 }
 
-const Main = ({ children, title }:{ children: ReactNode, title?: string }) => {
+const Main = ({ children, title }: { children: ReactNode, title?: string }) => {
   return (
     <main className="
       min-h-screen

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>angg</title>
+        <title>Musaj</title>
         <meta name="description" content="Angela Gilhotra" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -22,11 +22,11 @@ const Home: NextPage = () => {
             meandering between several what ifs
           </div>
           <div className="flex flex-row gap-3 text-[1.5rem] w-full">
-            <a href="https://twitter.com/anggxyz" target="_blank" className="hover:scale-[1.08] transform transition duration-500" >
+            <a href="https://twitter.com/iam_musaj" target="_blank" className="hover:scale-[1.08] transform transition duration-500" >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://github.com/anggxyz" target="_blank" className="hover:scale-[1.08] transform transition duration-500" >
-            <FontAwesomeIcon icon={faGithub} />
+            <a href="https://github.com/muhammadsalihu" target="_blank" className="hover:scale-[1.08] transform transition duration-500" >
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
           <div className="flex flex-row w-full gap-3 text-[1.2rem]">
