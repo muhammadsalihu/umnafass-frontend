@@ -29,15 +29,15 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-row w-full gap-3 text-[1.2rem]">
             <Link href={"/about"} className="underline underline-offset-8">
-              about
+              About
             </Link>
 
             <Link href={"/asaj"} className="underline underline-offset-8">
-              asaj
+              Asaj
             </Link>
 
             <a href={"/https://musaj.xyz"} className="underline underline-offset-8">
-              musaj
+              Musaj
             </a>
           </div>
         </div>
