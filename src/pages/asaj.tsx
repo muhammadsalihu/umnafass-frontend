@@ -15,15 +15,22 @@ const Asaj = () => {
         <p>
           Wedding 2023
         </p>
-        <iframe
-          width={560}
-          height={315}
-          src="https://www.youtube.com/embed/di4_F4dztRM?si=FIWDgzzNHItlYTaZ"
-          title="YouTube video player"
-          frameBorder={0}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 
-        />
+
+
+        <div>
+          <iframe
+            width={560}
+            height={315}
+            src="https://www.youtube.com/embed/di4_F4dztRM?si=FIWDgzzNHItlYTaZ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+          />
+        </div>
+
+
+
       </div>
     </Main>
   )
