@@ -2,7 +2,7 @@ import Main from "src/layout/Main";
 
 const Asaj = () => {
   return (
-    <Main title="Asaj">
+    <Main title="About">
       <div className="prose text-white my-6 prose-a:text-slate-300 prose-a:underline-offset-8">
         <p>
           Ahmad Salihu
@@ -10,6 +10,7 @@ const Asaj = () => {
         <p>
           Electrical Engineer
         </p>
+
 
         <p>
           Wedding 2023
@@ -21,3 +22,10 @@ const Asaj = () => {
 }
 
 export default Asaj;
+
+
+{/* <video controls width="100%">
+  <source src="./asaj-wedding-video.mp4" type="video/mp4"
+  />
+  Sorry, your browser doesn't support videos.
+</video> */}
