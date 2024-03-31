@@ -10,9 +10,7 @@ const About = () => {
           <span className="text-yellow-400"> Musaj</span>
 
         </div>
-        <p>Productize Yourself: N</p>
-        <p>Productize Yourself: A</p>
-        <p>Productize Yourself: F</p>
+
       </div>
     </Main>
   )
