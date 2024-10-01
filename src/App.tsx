@@ -3,6 +3,7 @@ import Home from "./pages/index.tsx"
 import About from "./pages/about/index.tsx"
 import Contact from "./pages/contact/index.tsx"
 import Store from "./pages/store/index.tsx"
+import Dashboard from "./pages/dashboard/index.tsx"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   )

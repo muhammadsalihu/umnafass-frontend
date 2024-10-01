@@ -15,6 +15,10 @@ const Home = () => {
     const goToStore = () => { 
         navigate('/store')
      }
+
+    const goToDashboard = () => { 
+        navigate('/dashboard')
+     }
     return (
         <div className="w-full h-screen">
             {/* Header */}
@@ -30,6 +34,7 @@ const Home = () => {
                             <a href="#" onClick={goToAbout}>About</a>
                             <a href="/contact" onClick={goToContact}>Contact</a>
                             <a href="/store" onClick={goToStore}>Store</a>
+                            <a href="/dashboard" onClick={goToDashboard}>Dashboard</a>
                         </div>
                     </div>
                 </div>
