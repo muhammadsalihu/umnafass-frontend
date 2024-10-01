@@ -1,14 +1,20 @@
+import { Routes, Route } from "react-router"
+import Home from "./pages/index.tsx"
+import About from "./pages/about/index.tsx"
+import Contact from "./pages/contact/index.tsx"
+import Store from "./pages/store/index.tsx"
 
-import './App.css'
 
 function App() {
 
   return (
     <>
-      
-      
-      <h1>Welcome to Umnafass</h1>
-   
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/store" element={<Store />} />
+      </Routes>
     </>
   )
 }
