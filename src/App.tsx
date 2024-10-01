@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router"
+import { Routes, Route } from "react-router-dom"
 import Home from "./pages/index.tsx"
 import About from "./pages/about/index.tsx"
 import Contact from "./pages/contact/index.tsx"
