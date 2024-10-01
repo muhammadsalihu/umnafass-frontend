@@ -1,4 +1,4 @@
-import { Navigate } from "react-router"
+
 
 const About = () => { 
     return (
