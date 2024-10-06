@@ -213,7 +213,7 @@ const Home = () => {
     return (
         <div className="w-full h-screen">
             {/* Header */}
-            <div className="flex-col md:flex-row   bg-[#0F220C] h-[15%] md:h-[10%] flex justify-between items-center py-2 md:py-0 px-24 text-white w-full">
+            <div className="flex-col md:flex-row   bg-[#0F220C] h-[20%] md:h-[10%] flex justify-between items-center py-2 md:py-0 px-24 text-white w-full">
                 <div className="cursor-pointer mb-1" onClick={goToHome}>
                     <img src={logo} alt="umnafass-gifts-logo" />
                 </div>
