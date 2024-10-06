@@ -69,139 +69,9 @@ const Cards = () => {
     )
   }
 
-const Home = () => {
-    const navigate = useNavigate(); 
-
-    const goToHome = () => { 
-        navigate('/')
-     }
-    const goToAbout = () => { 
-        navigate('/about')
-     }
-
-    const goToContact = () => { 
-        navigate('/contact')
-     }
-
-    const goToStore = () => { 
-        navigate('/store')
-     }
-
-    const goToDashboard = () => { 
-        navigate('/dashboard')
-     }
-    const handleProfile = () => { 
-        navigate('/profile')
-     }
+  const SocialMediaSection = () => { 
     return (
-        <div className="w-full h-screen">
-            {/* Header */}
-            <div className="flex-col md:flex-row   bg-[#0F220C] h-[15%] md:h-[10%] flex justify-between items-center py-2 md:py-0 px-24 text-white w-full">
-                <div className="cursor-pointer mb-1" onClick={goToHome}>
-                    <img src={logo} alt="umnafass-gifts-logo" />
-                </div>
-
-                <div className="flex gap-10">
-                    <a href="/about" onClick={goToAbout}>About</a>
-                    <a href="/contact" onClick={goToContact}>Contact</a>
-                    <a href="/store" onClick={goToStore}>Store</a>
-                    <a href="/dashboard" onClick={goToDashboard}>Dashboard</a>
-                </div>
-
-                <div className="flex gap-5">
-                    <img className="cursor-pointer" onClick={handleProfile} src={userIcon} alt="user-icon" />
-                    <img className="cursor-pointer" onClick={handleProfile} src={cartIcon} alt="cart-icon" />
-                </div>
-            </div>
-
-            {/* Main Layout */}
-            <div className="h-[90%]">
-                    <Hero />
-                    <Cards />
-
-                 {/* Prodcuts Preview */}
-                <div className="bg-black-400 mb-8 flex gap-3 justify-center sm:my-20">
-                    <a href="#">All</a>
-                    <a href="#">Popular Products</a>
-                    <a href="#">Throw Pillows</a>
-                    <a href="#">Bedsheets</a>
-                    <a href="#">Gift Set</a>
-                </div>
-
-                 {/* Products Components  */}
-                    <div className="flex flex-col px-10 justify-center items-center gap-14">
-                        {/* 1st Row */}
-                        <div className="flex gap-4">
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        </div>
-
-                        {/* 2nd Row */}
-                        <div className="flex-col md:flex-row flex gap-4">
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        </div>
-
-                        {/* 3rd Row */}
-                        <div className="flex gap-4">
-                            <ProductPreview />
-                            <ProductPreview />
-                            <ProductPreview />
-                            <ProductPreview />
-                        </div>
-                    </div> 
-
-                {/* Gifts Created */}
-                <div className="bg-green-100 flex flex-col justify-center align-center py-20">
-                    <p className="text-center mb-4 text-4xl font-semibold">Over 1000 custom gifts created!</p>
-                    <button className="text-center bg-black text-white text-xs px-4 py-2 rounded">Get your custom gift now</button>
-                </div> 
-
-                {/* Fast Shipping, Secured Checkout, Help Center */}
-                <div className="flex-col items-center gap-4 flex py-8 px-4">
-                    {/* Fast Shipping */}
-                    <div className="gap-4 p-2 flex ">
-                        <img src={fastShipping} alt="fast-shipping" />
-                        <div className="flex flex-col">
-                            <p className="text-sm font-bold">Fast Shipping</p>
-                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
-                        </div>
-                    </div>
-
-                    {/* Secured Checkout */}
-                    <div className="gap-4  p-2 flex ">
-                        <img src={secureCheckout} alt="fast-shipping" />
-                        <div className="flex flex-col">
-                            <p className="text-sm font-bold">Secured Checkout</p>
-                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
-                        </div>
-                    </div>
-
-                    {/* Help Center */}
-                    <div className="gap-4  p-2 flex ">
-                        <img src={helpCenter} alt="fast-shipping" />
-                        <div className="flex flex-col">
-                            <p className="text-sm font-bold">Fast Shipping</p>
-                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Buttons Section */}
-                <div className="text-center  mb-14">
-                    <button className="border border-gray-400 text-sm rounded-full px-10 py-2 shadow">Customize a Gift Now</button>
-                    <button className="border border-gray-400 text-sm rounded-full px-10 py-2 shadow">Follow Us</button>
-                    <button className="bg-green-900 text-sm text-white rounded-full px-10 py-2 shadow">Get your custom gift now</button>
-                    <button className="bg-green-500 text-sm text-white rounded-full px-10 py-2 shadow">Buy Now</button>
-                </div>
-
-
-                {/* Social Media Section */}
-                <div className="mb-20 w-full">
+        <div className="mb-20 w-full">
                     {/* Follow Us */}
                     <div className="mb-10 flex justify-between w-full items-center px-8 md:px-14 ">
                         <div className="">
@@ -234,9 +104,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+    )
+   }
 
-                {/* Footer Section */}
-                <div className="bg-[#10290A] flex flex-col md:flex-row md:justify-between p-10">
+  const Footer = () => { 
+    return (
+        <div className="bg-[#10290A] flex flex-col md:flex-row md:justify-between p-10">
                     {/* Column One */}
                     <div className="mb-6">
                         <img className="mb-4" src={logo} alt="logo" />
@@ -296,6 +169,152 @@ const Home = () => {
                         
                     </div>
                 </div>
+    )
+   }
+
+   const Buttons = () => { 
+    return (
+        <div className="grid  mb-14">
+            <button className="border border-gray-400 text-sm rounded-full px-10 py-2 shadow">Customize a Gift Now</button>
+            <button className="border border-gray-400 text-sm rounded-full px-10 py-2 shadow">Follow Us</button>
+            <button className="bg-green-900 text-sm text-white rounded-full px-10 py-2 shadow">Get your custom gift now</button>
+            <button className="bg-green-500 text-sm text-white rounded-full px-10 py-2 shadow">Buy Now</button>
+        </div>
+    )
+
+    }
+
+const Home = () => {
+    const navigate = useNavigate(); 
+
+    const goToHome = () => { 
+        navigate('/')
+     }
+    const goToAbout = () => { 
+        navigate('/about')
+     }
+
+    const goToContact = () => { 
+        navigate('/contact')
+     }
+
+    const goToStore = () => { 
+        navigate('/store')
+     }
+
+    const goToDashboard = () => { 
+        navigate('/dashboard')
+     }
+    const handleProfile = () => { 
+        navigate('/profile')
+     }
+    return (
+        <div className="w-full h-screen">
+            {/* Header */}
+            <div className="flex-col md:flex-row   bg-[#0F220C] h-[15%] md:h-[10%] flex justify-between items-center py-2 md:py-0 px-24 text-white w-full">
+                <div className="cursor-pointer mb-1" onClick={goToHome}>
+                    <img src={logo} alt="umnafass-gifts-logo" />
+                </div>
+
+                <div className="flex gap-10">
+                    <a href="/about" onClick={goToAbout}>About</a>
+                    <a href="/contact" onClick={goToContact}>Contact</a>
+                    <a href="/shop" onClick={goToStore}>Shop</a>
+                    {/* <a href="/dashboard" onClick={goToDashboard}>Dashboard</a> */}
+                </div>
+
+                <div className="flex gap-5">
+                    <img className="cursor-pointer" onClick={handleProfile} src={userIcon} alt="user-icon" />
+                    <img className="cursor-pointer" onClick={handleProfile} src={cartIcon} alt="cart-icon" />
+                </div>
+            </div>
+
+            {/* Main Layout */}
+            <div className="h-[90%]">
+                    <Hero />
+                    <Cards />
+
+                 {/* Prodcuts Preview */}
+                <div className="bg-black-400 mb-8 flex gap-3 justify-center sm:my-20">
+                    <a href="#">All</a>
+                    <a href="#">Popular Products</a>
+                    <a href="#">Throw Pillows</a>
+                    <a href="#">Bedsheets</a>
+                    <a href="#">Gift Set</a>
+                </div>
+
+                 {/* Products Components  */}
+                    <div className="flex flex-col px-10 justify-center items-center gap-14">
+                        {/* 1st Row */}
+                        <div className="flex gap-4">
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        </div>
+
+                        {/* 2nd Row */}
+                        <div className="flex-col md:flex-row flex gap-4">
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        </div>
+
+                        {/* 3rd Row */}
+                        <div className="flex gap-4">
+                            <ProductPreview />
+                            <ProductPreview />
+                            <ProductPreview />
+                            <ProductPreview />
+                        </div>
+                    </div> 
+
+                {/* Gifts Created */}
+                <div className="bg-green-100 flex flex-col justify-center align-center py-20">
+                    <p className="text-center mb-4 text-4xl font-semibold">Over 1000 custom gifts created!</p>
+                    <button className="text-center bg-black text-white text-xs px-4 py-2 rounded">Get your custom gift now</button>
+                </div> 
+
+                {/* Fast Shipping, Secured Checkout, Help Center */}
+                <div className="flex flex-col items-center gap-4  py-8 px-4 md:flex-row md:justify-center">
+                    {/* Fast Shipping */}
+                    <div className="gap-4 p-2 flex ">
+                        <img src={fastShipping} alt="fast-shipping" />
+                        <div className="flex flex-col">
+                            <p className="text-sm font-bold">Fast Shipping</p>
+                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
+                        </div>
+                    </div>
+
+                    {/* Secured Checkout */}
+                    <div className="gap-4  p-2 flex ">
+                        <img src={secureCheckout} alt="fast-shipping" />
+                        <div className="flex flex-col">
+                            <p className="text-sm font-bold">Secured Checkout</p>
+                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
+                        </div>
+                    </div>
+
+                    {/* Help Center */}
+                    <div className="gap-4  p-2 flex ">
+                        <img src={helpCenter} alt="fast-shipping" />
+                        <div className="flex flex-col">
+                            <p className="text-sm font-bold">Fast Shipping</p>
+                            <p className="text-gray text-xs">Get your gift delivered in 24h</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Buttons Section */}
+               <Buttons />
+
+
+                {/* Social Media Section */}
+                <SocialMediaSection />
+
+                {/* Footer Section */}
+                <Footer />
                 
             </div>
       
