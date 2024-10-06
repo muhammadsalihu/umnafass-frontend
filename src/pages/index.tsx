@@ -17,6 +17,28 @@ const Hero = () => {
         </div>
     )
  }
+ {/* Cards */}
+const Cards = () => { 
+    return (
+        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="bg-[#F0D294] py-14 px-14">
+            <h2 className="text-2xl font-semibold">Get Instant custom office gifts pack.</h2>
+            <p className="text-lg">Get office gifts that include notebooks, tea mugsKeyholders, water bottle flask etc.</p>
+            <button className="text-center bg-black text-white px-4 py-2 rounded">Buy Now</button>
+            <img src={giftsPack} alt="gift-pack" />
+        </div>
+        <div className=" bg-[#F0D294] py-14 px-14">
+            <h2 className="text-2xl font-semibold">Birthday set at 10% discount. </h2>
+            <p className="text-lg">Get office gifts that include notebooks, tea mugsKeyholders, water bottle flask etc.</p>
+            <button className="text-center bg-black text-white px-4 py-2 rounded">Buy Now</button>
+            <div>
+            <img className="" src={birthdayGiftPack} alt="birthday-gift-pack" />
+            </div>
+            
+        </div>
+    </div>
+    )
+ }
 
  const ProductPreview = () => { 
     return (
@@ -76,31 +98,13 @@ const Home = () => {
             </div>
 
             {/* Main Layout */}
-                <div className="h-[90%]">
+            <div className="h-[90%]">
                     <div className="text-center py-2 bg-green-100 w-full">Sales! Sales! Sales</div>
                     <Hero />
+                    <Cards />
 
-                {/* Cards */}
-                <div className="flex flex-col lg:flex-row gap-4">
-                        <div className="bg-[#F0D294] py-14 px-14">
-                            <h2 className="text-2xl font-semibold">Get Instant custom office gifts pack.</h2>
-                            <p className="text-lg">Get office gifts that include notebooks, tea mugsKeyholders, water bottle flask etc.</p>
-                            <button className="text-center bg-black text-white px-4 py-2 rounded">Buy Now</button>
-                            <img src={giftsPack} alt="gift-pack" />
-                        </div>
-                        <div className=" bg-[#F0D294] py-14 px-14">
-                            <h2 className="text-2xl font-semibold">Birthday set at 10% discount. </h2>
-                            <p className="text-lg">Get office gifts that include notebooks, tea mugsKeyholders, water bottle flask etc.</p>
-                            <button className="text-center bg-black text-white px-4 py-2 rounded">Buy Now</button>
-                            <div></div>
-                            <img className="" src={birthdayGiftPack} alt="birthday-gift-pack" />
-                        </div>
-                    </div>
-                </div>
-
-                {/* Prodcuts Preview */}
-
-                <div className="mb-8 flex gap-3 justify-center sm:my-20">
+                 {/* Prodcuts Preview */}
+                <div className="bg-black-400 mb-8 flex gap-3 justify-center sm:my-20">
                     <a href="#">All</a>
                     <a href="#">Popular Products</a>
                     <a href="#">Throw Pillows</a>
@@ -108,40 +112,42 @@ const Home = () => {
                     <a href="#">Gift Set</a>
                 </div>
 
-                {/* Products Components  */}
+                 {/* Products Components  */}
+                    <div className="flex flex-col px-10 justify-center items-center gap-14">
+                        {/* 1st Row */}
+                        <div className="flex gap-4">
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        <ProductPreview />
+                        </div>
 
-                <div className="flex flex-col px-10 justify-center items-center gap-14">
-                {/* 1st Row */}
-                <div className="flex gap-4">
-                   <ProductPreview />
-                   <ProductPreview />
-                   <ProductPreview />
-                   <ProductPreview />
-                </div>
+                        {/* 2nd Row */}
+                        <div className="flex gap-4">
+                            <img src={giftRow1} alt="" />
+                            <img src={giftRow1} alt="" />
+                            <img src={giftRow1} alt="" />
+                            <img src={giftRow1} alt="" />
+                        </div>
 
-                {/* 2nd Row */}
-                <div className="flex gap-4">
-                    <img src={giftRow1} alt="" />
-                    <img src={giftRow1} alt="" />
-                    <img src={giftRow1} alt="" />
-                    <img src={giftRow1} alt="" />
-                </div>
-
-                {/* 3rd Row */}
-                <div className="flex gap-4">
-                    <ProductPreview />
-                    <ProductPreview />
-                    <ProductPreview />
-                    <ProductPreview />
-                </div>
-
-                </div>
+                        {/* 3rd Row */}
+                        <div className="flex gap-4">
+                            <ProductPreview />
+                            <ProductPreview />
+                            <ProductPreview />
+                            <ProductPreview />
+                        </div>
+                    </div> 
 
                 {/* Gifts Created */}
                 <div className="bg-green-100 flex flex-col justify-center align-center py-20">
                     <p className="text-center mb-4 text-4xl font-semibold">Over 1000 custom gifts created!</p>
                     <button className="text-center bg-black text-white text-xs px-4 py-2 rounded">Get your custom gift now</button>
-                </div>
+                </div> 
+            </div>
+
+
+               
         </div>
     )
  }
