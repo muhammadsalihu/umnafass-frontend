@@ -248,12 +248,6 @@ const Home = () => {
                  {/* Products Components  */}
                     <div className="flex flex-col px-10 justify-center items-center gap-14">
                         {/* 1st Row */}
-                        <div className="flex gap-4">
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        <ProductPreview />
-                        </div>
 
                         {/* 2nd Row */}
                         <div className="flex-col md:flex-row flex gap-4">
@@ -263,13 +257,7 @@ const Home = () => {
                         <ProductPreview />
                         </div>
 
-                        {/* 3rd Row */}
-                        <div className="flex gap-4">
-                            <ProductPreview />
-                            <ProductPreview />
-                            <ProductPreview />
-                            <ProductPreview />
-                        </div>
+                      
                     </div> 
 
                 {/* Gifts Created */}
