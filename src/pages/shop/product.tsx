@@ -48,17 +48,6 @@ export const Header = () => {
   )
  }
 
- const ProductPreview = () => { 
-  return (
-      <div className="">
-      <img src={giftRow1} alt="" />
-      <div className="flex flex-col md:flex-row md:justify-between py-6 items-center px-4">
-          <p className="">3pc Bedsheets</p>
-          <button className="bg-green-100 text-xs px-8 py-3">Buy Now</button>
-      </div>
-  </div>
-  )
-}
 
 
 const Product = () => { 

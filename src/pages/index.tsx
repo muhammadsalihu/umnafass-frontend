@@ -207,9 +207,6 @@ const Home = () => {
         navigate('/store')
      }
 
-    const goToDashboard = () => { 
-        navigate('/dashboard')
-     }
     const handleProfile = () => { 
         navigate('/profile')
      }

@@ -22,9 +22,6 @@ export const Header = () => {
         navigate('/store')
      }
 
-    const goToDashboard = () => { 
-        navigate('/dashboard')
-     }
     const handleProfile = () => { 
         navigate('/profile')
      }
