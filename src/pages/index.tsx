@@ -225,7 +225,24 @@ const Home = () => {
                     {/* <a href="/dashboard" onClick={goToDashboard}>Dashboard</a> */}
                 </div>
 
-                <div className="flex gap-5">
+                <div className="flex items-center gap-3">
+                    <button
+                        className="bg-green-500 text-white text-xs font-semibold px-4 py-2 rounded-full"
+                        onClick={() => {
+                            const w = window as any;
+                            if (w.__pwaPrompt) {
+                                w.__pwaPrompt.prompt();
+                            } else {
+                                alert(
+                                    /iphone|ipad|ipod/i.test(navigator.userAgent)
+                                        ? 'Tap the Share button → "Add to Home Screen"'
+                                        : 'Tap ⋮ menu → "Add to Home Screen"'
+                                );
+                            }
+                        }}
+                    >
+                        Install App
+                    </button>
                     <img className="cursor-pointer" onClick={handleProfile} src={userIcon} alt="user-icon" />
                     <img className="cursor-pointer" onClick={handleProfile} src={cartIcon} alt="cart-icon" />
                 </div>
