@@ -5,6 +5,7 @@ import Contact from "./pages/contact/index.tsx"
 import Shop from "./pages/shop/index.tsx"
 import Product from "./pages/shop/product.tsx"
 import Dashboard from "./pages/dashboard/index.tsx"
+import PWAInstallBanner from "./components/PWAInstallBanner.tsx"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/product"  element={<Product />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <PWAInstallBanner />
     </>
   )
 }
