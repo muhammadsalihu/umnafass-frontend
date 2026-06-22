@@ -9,7 +9,7 @@ interface BeforeInstallPromptEvent extends Event {
 export default function PWAInstallBanner() {
   useEffect(() => {
     const handler = (e: Event) => {
-      e.preventDefault()
+      // Don't call e.preventDefault() — that suppresses Chrome's native install banner
       ;(window as any).__pwaPrompt = e as BeforeInstallPromptEvent
     }
     window.addEventListener('beforeinstallprompt', handler)
