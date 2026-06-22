@@ -303,6 +303,38 @@ const Home = () => {
                 {/* Social Media Section */}
                 <SocialMediaSection />
 
+                {/* Download App Section */}
+                <div className="bg-green-900 text-white py-10 px-6 flex flex-col items-center text-center gap-4">
+                    <p className="text-xl font-bold">Download the Umnafass App</p>
+                    <p className="text-sm text-green-300 max-w-xs">Install on your phone for quick access to the shop and admin panel — works offline too.</p>
+                    <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+                        <a
+                            href="/dashboard"
+                            className="flex-1 bg-white text-green-900 font-semibold text-sm py-3 rounded-full text-center"
+                        >
+                            Open MyAdmin
+                        </a>
+                        <button
+                            id="pwa-install-btn"
+                            className="flex-1 bg-green-500 text-white font-semibold text-sm py-3 rounded-full"
+                            onClick={() => {
+                                const w = window as any;
+                                if (w.__pwaPrompt) {
+                                    w.__pwaPrompt.prompt();
+                                } else {
+                                    alert(
+                                        /iphone|ipad|ipod/i.test(navigator.userAgent)
+                                            ? 'On iPhone: tap the Share button (box with arrow) → "Add to Home Screen"'
+                                            : 'On Android Chrome: tap the ⋮ menu → "Add to Home Screen"'
+                                    );
+                                }
+                            }}
+                        >
+                            Install App
+                        </button>
+                    </div>
+                </div>
+
                 {/* Footer Section */}
                 <Footer />
                 
